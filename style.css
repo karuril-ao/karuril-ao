@@ -1,0 +1,121 @@
+:root {
+    --fondo: #000;
+    --letra: #fff;
+}
+
+html {  
+    background-color: var(--fondo);
+    filter: invert(0%) contrast(0.75);
+    transition: filter 0.3s ease;
+}   
+html:has(#style-switch:checked) {
+    filter: invert(90%) contrast(0.9);
+}
+
+body {
+    color: var(--letra);
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+
+    margin: 0;
+}   
+main{
+    font-size: 24px;
+    justify-self: center;
+    width: 50pc;
+    margin-bottom: 100px;
+}
+a{
+    color: var(--letra);
+    text-decoration: underline;
+}
+a:visited{
+    color: var(--letra);
+    text-decoration: underline;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    margin: 0;
+    text-align: center;
+    align-content: center;
+    height: 80px;
+}
+header .volver{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+}
+.volver a{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    width: auto; 
+}
+.volver a:hover img{
+    transform: translateX(-10px);
+}
+.volver a img{
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+p {
+    margin-bottom: 0;
+}
+p + p {
+    text-indent: 1.5em;
+    
+    margin-top: 20px;
+}   
+
+.cita{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    margin: 0;
+    height: 50px;
+    background-color: var(--fondo);
+    align-content: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creditos{
+    font-size: 18px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.modo-oscuro{
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.boton-oscuro{
+    margin: 0;
+}
+
+
