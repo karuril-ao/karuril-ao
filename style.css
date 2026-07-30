@@ -156,8 +156,8 @@ footer{
     text-align: left;
     display: flex;
     align-items: center;
-    border: 2px solid var(--letra);
-    border-radius: 5px;
+    /*border: 2px solid var(--letra);
+    border-radius: 5px;*/
 }
 .modo-oscuro input[type="checkbox"] {
     width: 25px;
