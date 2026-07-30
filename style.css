@@ -32,13 +32,47 @@ main img{
     width: 100%;
     height: auto;
 }
+
+main .cont-desc-img{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.lista-historias a{
+    display: flex;
+    flex-direction: row;
+}
+.lista-historias a .guion-historia{
+    margin: 10px;
+    transition: transform 0.2s ease;
+    color: var(--letra);
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.lista-historias a .item_historia{
+    transform: translateX(-50px);
+    margin: 10px;
+    transition: transform 0.2s ease;
+    color: var(--letra);
+    text-decoration: none;
+}
+.lista-historias a:hover .item_historia{
+    transform: translateX(-30px);
+    text-decoration: underline;
+}
+.lista-historias a:hover .guion-historia{
+    opacity: 1;
+}
+
 a{
     color: var(--letra);
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:visited{
     color: var(--letra);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 header {
@@ -55,6 +89,7 @@ header h1{
     text-align: center;
     align-content: center;
     height: 80px;
+    font-size: 50px;
 }
 header .volver{
     position: absolute;
@@ -132,6 +167,7 @@ footer{
 .modo-oscuro label{
     font-size: 25px;
     margin: 5px;
+    margin-bottom: 0;
 }
 
 
