@@ -25,18 +25,29 @@ body {
 main{
     font-size: 20px;
     justify-self: center;
-    width: 50pc;
+    width: 55pc;
     margin-bottom: 100px;
 }
 main img{
     width: 100%;
     height: auto;
 }
+p {
+    margin-bottom: 0;
+}
+p + p {
+    text-indent: 1.5em;
+    
+    margin-top: 20px;
+}   
 
 main .cont-desc-img{
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+}
+.cont-desc p{
+    text-indent: 0;
 }
 
 .lista-historias a{
@@ -113,15 +124,6 @@ header .volver{
     width: auto;
     transition: transform 0.3s ease;
 }
-
-p {
-    margin-bottom: 0;
-}
-p + p {
-    text-indent: 1.5em;
-    
-    margin-top: 20px;
-}   
 
 .cita{
     padding-left: 50px;
