@@ -61,16 +61,17 @@ main .cont-desc-img{
     text-decoration: none;
     opacity: 0;
     transition: opacity 0.2s ease;
+    transform: translateX(-10px);
 }
 .lista-historias a .item_historia{
-    transform: translateX(-50px);
+    transform: translateX(-75px);
     margin: 10px;
     transition: transform 0.2s ease;
     color: var(--letra);
     text-decoration: none;
 }
 .lista-historias a:hover .item_historia{
-    transform: translateX(-30px);
+    transform: translateX(-50px);
     text-decoration: underline;
 }
 .lista-historias a:hover .guion-historia{
