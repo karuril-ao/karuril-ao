@@ -52,32 +52,35 @@ main .cont-desc-img{
     line-height: 1.3;
 }
 
-.lista-historias a{
+.lista-historias .item-lista{
     display: flex;
     flex-direction: row;
     width: fit-content; 
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
-.lista-historias a .guion-historia{
-    margin: 10px;
+.lista-historias .item-lista .guion-historia{
+    margin: 0;
+    display: none;
     transition: transform 0.2s ease;
     color: var(--letra);
     text-decoration: none;
     opacity: 0;
     transition: opacity 0.2s ease;
-    transform: translateX(-10px);
 }
-.lista-historias a .item_historia{
-    transform: translateX(-75px);
-    margin: 10px;
+.lista-historias .item-lista .item_historia{
+    margin: 0;
+    transform: translateX(0px);
     transition: transform 0.2s ease;
     color: var(--letra);
     text-decoration: none;
 }
-.lista-historias a:hover .item_historia{
-    transform: translateX(-50px);
+.lista-historias .item-lista:hover .item_historia{
     text-decoration: underline;
+    transform: translateX(5px);
 }
-.lista-historias a:hover .guion-historia{
+.lista-historias .item-lista:hover .guion-historia{
+    display: block;
     opacity: 1;
 }
 
