@@ -55,31 +55,51 @@ main .cont-desc-img{
 .lista-historias .item-lista{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.lista-historias .item-lista .guion-y-nombre{
+    display: flex;
+    flex-direction: row;
     width: fit-content; 
     justify-content: flex-start;
     margin-bottom: 10px;
 }
-.lista-historias .item-lista .guion-historia{
+.lista-historias .item-lista .guion-y-nombre .guion-historia{
     margin: 0;
-    transition: transform 0.2s ease;
     color: var(--letra);
     text-decoration: none;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.1s ease;
 }
-.lista-historias .item-lista .item_historia{
+.lista-historias .item-lista .guion-y-nombre .item_historia{
     margin: 0;
-    transform: translateX(-15px);
-    transition: transform 0.2s ease;
+    transform: translateX(-16px);
+    transition: transform 0.1s ease;
     color: var(--letra);
     text-decoration: none;
 }
-.lista-historias .item-lista:hover .item_historia{
+.lista-historias .item-lista:hover .guion-y-nombre .item_historia{
     text-decoration: underline;
     transform: translateX(5px);
 }
-.lista-historias .item-lista:hover .guion-historia{
+.lista-historias .item-lista:hover .guion-y-nombre .guion-historia{
     opacity: 1;
+}
+.lista-historias .item-lista .img-historia{
+    opacity: 0;
+    height: 35px;
+    width: auto;
+    transform: translateX(-250px) scale(1);
+    transition: transform 0.1s ease;
+}
+.lista-historias .item-lista:hover .img-historia{
+    opacity: 1;
+    transform: translateX(-250px) scale(6);
+    border: 1px solid var(--letra);
+    border-radius: 2px;
+}
+html:has(#style-switch:checked) .lista-historias .item-lista:hover .img-historia {
+    filter: invert(100%) hue-rotate(180deg);
 }
 
 a{
