@@ -87,15 +87,16 @@ main .cont-desc-img{
 }
 .lista-historias .item-lista .img-historia{
     opacity: 0;
-    height: 35px;
+    position: absolute;
+    height: 15pc;
     width: auto;
-    transform: translateX(-250px) scale(1);
+    transform: translateX(400px) translateY(-100px) scale(0);
     transition: transform 0.1s ease;
 }
 .lista-historias .item-lista:hover .img-historia{
     opacity: 1;
-    transform: translateX(-250px) scale(6);
-    border: 1px solid var(--letra);
+    transform: translateX(400px) translateY(-100px) scale(1);
+    border: 3px solid var(--letra);
     border-radius: 2px;
 }
 html:has(#style-switch:checked) .lista-historias .item-lista:hover .img-historia {
