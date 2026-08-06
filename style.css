@@ -100,7 +100,7 @@ main .cont-desc-img{
     opacity: 1;
     transform: translateX(400px) translateY(-150px) scale(1);
     border: 3px solid var(--letra);
-    border-radius: 0px;
+    border-radius: 20px;
 }
 html:has(#style-switch:not(checked)) .lista-historias .item-lista:hover .img-historia {
     filter: contrast(1.5);
